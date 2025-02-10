@@ -44,3 +44,5 @@ const resultat_exercice = partiel + " "+ partie2 +" " + partie3 + " " + partie4;
 console.log("phrase exercice :", resultat_exercice)
 document.write("<h2>" + resultat_exercice + "</h2>")
 
+const h2= document .querySelector(".essai_h2")
+h2.innerHTML=resultat_exercice

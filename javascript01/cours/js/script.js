@@ -9,7 +9,7 @@
 // 2 variables : let et const / VAR OBSOLETE
 
 //pour déclarer une var :
-let nom;
+let nom; //nom = nom que l'on donne à la var
 
 
 // 2-ASSIGNER(affecter) UNE VALEUR A UNE VAR
