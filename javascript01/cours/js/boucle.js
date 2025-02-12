@@ -9,7 +9,7 @@ cette boucle est très utilisée qd on ne connait pas le nb de tours de boucles 
 
 // let j=1;
 
-// while(j<=10){// tant que j n'est pas arrivé à 10 la boucla continue
+// while(j<=10){// tant que j n'est pas arrivé à 10 la boucle continue
 //     //--> tant que j est < ou = à 1
 //     document.write("<h1 style='color:blue'> je passe par ici "+j+" </h1>");
 //     j++;
