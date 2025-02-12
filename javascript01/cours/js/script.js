@@ -6,7 +6,7 @@
    comm sur plusieurs lignes */
 
 // 1- DECLARER UNE VARIABLE
-// 2 variables : let et const / VAR OBSOLETE
+// 2 variables : let et const / var OBSOLETE
 
 //pour déclarer une var :
 let nom; //nom = nom que l'on donne à la var
@@ -14,8 +14,9 @@ let nom; //nom = nom que l'on donne à la var
 
 // 2-ASSIGNER(affecter) UNE VALEUR A UNE VAR
 nom="momo";
- //let ville="Paris";  on déclare une var et on lui affecte une valeur en même tps//
-
+ //let ville="Paris";  on déclare une var et on lui affecte 
+ // une valeur en même tps//
+// avec const qui ne peut pas etre modifié, on fait tjs const variable valeur
 let ville;
 ville="Paris";
 console.log (ville);
@@ -73,10 +74,10 @@ console.log(" vacances en int (number) :", parseInt (vacances));
 // parseInt --> pour passer un string en nb 
 // EX pour récupérer les données renseignées d'un formulaire TJRS en string (chaine de caractères), si on veut utiliser lenb pour un calcul
 
-//string to number
+//string to number----parseInt : pour convertir text en chiffres
 let vacances_number=parseInt(vacances)
 
-//number ou booléen to string
+//number ou booléen to string - toString : pour convertir chiffres en text
 console.log(" vacances_number to string :", vacances_number.toString());
 console.log(" boolean to string :", boolean_false.toString());
 
@@ -84,3 +85,6 @@ console.log(" boolean to string :", boolean_false.toString());
 let unChiffre="3.45"
 console.log("string to number :", parseInt (unChiffre)); /*--> ne prend pas la décimale  */
 console.log("string to float :", parseFloat (unChiffre)); /*--> prend la décimale  */
+
+/*base de données ----> backend ----> front end
+pour entrer données ds base de données, le client a besoin d'un back office un peu sympa*/
