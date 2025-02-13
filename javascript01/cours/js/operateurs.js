@@ -28,7 +28,8 @@ console.log("voir le résultat multipl : ", resultat)
 resultat = nb1 / nb2
 console.log("voir le résultat division : ", resultat)
 
-// MODULO --> RESTE DE LA DIVISION
+// MODULO --> RESTE DE LA DIVISION / pour chiffres pairs (let pair= (n%2===0)) 
+// et impairs (let impair= (n%2!==0))
 resultat= nb1%nb3
 console.log("voir le modulo_reste div nb1 par nb3", resultat)
 

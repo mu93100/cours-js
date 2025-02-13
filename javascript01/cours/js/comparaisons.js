@@ -2,15 +2,15 @@
 
 // assignation = : utilisé pour assigner une val
 
-let nb1=123 // number
-let nb2="123" // string
-console.log(nb1, nb2)
-//l'opérateur de comparaisons == signifie "egal à"
-// mais se fout des types (number ou string au choix)
-console.log("== fait quoi", nb1==nb2)
-//l'opérateur de comparaisons === signifie " STRICTEMENT egal à"
-// en types ET en val
-console.log("== fait quoi", nb1===nb2)
+// let nb1=123 // number
+// let nb2="123" // string
+// console.log(nb1, nb2)
+// //l'opérateur de comparaisons == signifie "egal à"
+// // mais se fout des types (number ou string au choix)
+// console.log("== fait quoi", nb1==nb2)
+// //l'opérateur de comparaisons === signifie " STRICTEMENT egal à"
+// // en types ET en val
+// console.log("== fait quoi", nb1===nb2)
 
 //l'opérateur != signifie "diff. de", en valeur
 console.log("== fait quoi", nb1 != nb2)
