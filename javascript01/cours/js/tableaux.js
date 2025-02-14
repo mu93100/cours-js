@@ -38,6 +38,17 @@ console.log("mixte index4 rentrer dans tab index1 :", mixte[4][1])
 console.log("mixte index3 rentrer dans objet :", mixte[3].nom) // OU 
 console.log("mixte index3 rentrer dans objet :", mixte[3]["nom"])
 
+// indexOf
+// trouver l'index d'un tab :::
+fruits.indexOf("pomme")
+console.log("trouver l'index",fruits.indexOf("pomme"));
+
+//vider un tab
+let tab70=[1,2,3,4,5]
+tab70.length=0
+console.log("vide le tab",tab70);
+
+// ---------------MODIF DE L'ORIGINAL D'UN TAB 
 // ----------modifier un élément d'un tab
 // pour tableau on peut utiliser const ISO let car on pourra les modifier
 
@@ -55,7 +66,55 @@ console.log("fruits modifiés cerise", fruits);
 fruits.splice(1,0,"clém") // s'ajoute en 2ème
 console.log("fruits modifiés clem", fruits);
 
+let index=fruits.indexOf("pomme") // pour retrouver un élément, là pomme
+let result=fruits.splice(index,1) //supprimer pomme
+console.log("pomme supprimer", result);
+console.log(fruits); // pomme supprimé
+
+fruits.shift() //ne pas oublier les () SINON 9A NE MARCHE PAS
+console.log("supp 1er element",fruits);
+
+
 //chaines de caractères considérées aussi cô des tab
-log splice unshift push ETC : Fo  
-fruits.pop() //supp dernuers elements
+// log splice unshift push ETC : Fo  
+fruits.pop() //supp dernier element
 console.log(fruits);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+
+
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+// ---------------MODIF EN CREANT UN NX TAB =UNE COPIE DU TAB
+// ----------extraire une partie du tab SANS modif l'original
+let nouveauxFruits= fruits.slice (1.1)
+console.log("Nx tab", nouveauxFruits);
+
+// Fo pour filtrer des elements du tab - ici tt ce qui est <18
+let ages=[12,21,55,66,13,19,18]
+let resultat=ages.filter(
+    function checkAdult(parametre) {
+        return parametre >=18;
+    }
+)
+console.log("Nx tab age >18", resultat); 
+console.log("tab age n'est pas modifié",ages);
+

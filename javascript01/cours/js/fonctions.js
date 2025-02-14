@@ -51,3 +51,13 @@ function add(a,b){
     return a+b
 }
 console.log(add(5,2));
+
+// on peut utiliser une Fo en changeant uniquement 1 paramètre (params) 
+//  function name(params) {
+//     tableau_défini.pop(params)  
+// }
+// on peut utiliser une Fo en changeant de tableau ET 1 paramètre (params) 
+// --> on met 2 parametres
+// // function name(tab,params) {
+//     tab.pop(params)  
+// }
