@@ -27,8 +27,10 @@ const suiteDePhrase= "est une journée";
 const finDePhrase="magnifique";
 
 const resultat_phrase= debutPhrase +" " +suiteDePhrase + " " + finDePhrase;
-
 console.log("le résultat de la phrase : ", resultat_phrase)
+
+const resultat_phrase2=`${suiteDePhrase}${" "}${finDePhrase}${" "}${debutPhrase}`
+console.log("résultat de la phrase avec $ est :",resultat_phrase2);
 
 document.write("<h1>" + resultat_phrase + "</h1>")
 
