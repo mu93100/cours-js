@@ -63,7 +63,7 @@ let utilisateurs = [
 console.log(utilisateurs);
 
 // creer une Fo pour ajouter utilisateur
-// function ajoutUtilisateur(nom,mail,role) {
+function ajoutUtilisateur(nom,mail,role) {
     utilisateurs.push([nom, mail, role])
     console.log("ajouter");
 }
@@ -83,40 +83,52 @@ function suppUtilisateur(nom,mail,role) {
 // creer une Fo pour afficher liste utilisateur
 
 
+// AFFICHER User
+// on met index i car c'est dynamique
+function afficherUser() {
+    for(let i=0;i<utilisateurs.length; i++){
+        console.log(`nom : ${utilisateurs[i][0]}, mail : ${utilisateurs[i][1]}, role : ${utilisateurs[i][2]}`);
+    } 
+}
+afficherUser()
 
-// function ajoutUser(params) {
+let bb=2 // on declare une var globale
+function test() {
+    let bb=3 // on declare une var locale
+    console.log(bb);
+}
+test()
+console.log(bb);
+
+// si on met hors Fo let bb=4 console.log ::: Uncaught SyntaxError: Identifier 'bb' has already been declared (at ex_tab_fev14.js:103:5)
+// --> ça ne marche parseFloat, mais si on met bb=4 --> ça marche
+
+
+// pour supp un user via son nom
+// let utilisateurs = [
+//     ["Jean Dupont", "jean.dupont@email.com", "admin"],
+//     ["Marie Lemoine", "marie.lemoine@email.com", "utilisateur"],
+//     ["Pierre Durand", "pierre.durand@email.com", "modérateur"]
+// ];
+// boucle for : il parcourt ts les index les uns après les autres
+function supprimerUser(nom) {
+    let index=""
+    for(let i=0; i<utilisateurs.length; i++){
+        if (utilisateurs[i][0] === nom){
+            index=i;
+        }
+    }
+    if(index !== -1){
+        utilisateurs.splice(index,1)
+    }else{
+        console.log("aucun utilisateur trouvé avec ce nom");
+        
+    }
+}
+supprimerUser("Pierre Durand")
+console.log("supprimer pierre Durand", utilisateurs);
+
+    // let index=utilisateurs[i].indexOf(nom) // si nom existe, 
+    // // le code renvoit le N° d'index, sinon il renvoit -1 = ça n'existe pas
+
     
-// }
-
-//         // Fonction pour ajouter un utilisateur
-//         function ajouterUtilisateur() {
-//             let nom = document.getElementById("nom").value;
-//             let email = document.getElementById("email").value;
-//             let role = document.getElementById("role").value;
-// //  getElementById « Obtenir un élément par ID »
-//             if (nom && email && role) {
-//                 // Vérifier si l'email existe déjà
-//                 for (let i = 0; i < utilisateurs.length; i++) {
-//                     if (utilisateurs[i][1] === email) {
-//                         alert(" Cet email est déjà utilisé !");
-//                         return;
-//                     }
-//                 }
-
-//                 utilisateurs.push([nom, email, role]); //  push pour ajouter les données que l'on a rentrer (Nx nom, mail ETC)
-//                 afficherUtilisateurs(); // on réaffiche
-//             } else {
-//                 alert(" Veuillez remplir tous les champs !");
-//             }
-//         }
-
-//         // Fonction pour supprimer un utilisateur
-//         function supprimerUtilisateur(index) {
-//             utilisateurs.splice(index, 1)
-//             afficherUtilisateurs();
-//         }
-
-
-
-//         // Afficher les utilisateurs au chargement de la page
-//         afficherUtilisateurs();

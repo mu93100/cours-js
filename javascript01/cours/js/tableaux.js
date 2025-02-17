@@ -20,6 +20,7 @@ let fruits=["banane","pomme","myrtilles"]
 
 // tab mixte différent de type de données
 let mixte=[42,"hello",true,{nom:"alice"},[1,2,3]]
+//  index   0    1      2        2          4
 // nom:"alice" --->nom=clé ""=valeur
 
 // affichage de tab
@@ -63,6 +64,9 @@ console.log("fruits modifiés mangue", fruits);
 fruits.unshift("cerise") // s'ajoute en 1er
 console.log("fruits modifiés cerise", fruits);
 
+
+// !!!! splice (index, 0, "nom") avec zero, on ajoute le "nom" 
+// DIFF : avec 1, on supprime, et pas de  "nom" 
 fruits.splice(1,0,"clém") // s'ajoute en 2ème
 console.log("fruits modifiés clem", fruits);
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipDom</title>
+    <style>
+        #text p {
+            border: 3px solid green;
+        }
+
+        .ajout-class-js {
+            font-size: 40px;
+        }
+        .ajout-class-text2{
+            color: blue;
+            border: 2px dotted blue;
+            text-align: center;
+        }    
+        #text3{
+            height: 5rem;
+            border: 2px dotted tomato;
+            text-align: center;
+            align-content: center;
+        }
+        .carre{
+            width: 1rem;
+            height: 1rem;
+            background-color: blue;
+        }
+        .modal{
+            width: 15rem;
+            height: 15rem;
+            background-color: aquamarine;
+            text-align: center;
+            align-content: center;
+            display: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="titre1"></div>
+    <div id="titre2"></div>
+    <div id="titre3">TITRE ECRIT DS HTML</div>
+    <div id="text"></div>
+    <div id="text2"></div>
+    <div id="text3"></div>
+    <div class="carre"></div>
+    <button id="buttonModal">ouvrir la modal</button>
+    <div class="modal">m o d a l</div>
+
+    <button class="button_essai" onclick=alertClick() onmouseOver=colorChange()>clique moi</button>
+    <button class="button_essai2">clique toi</button>
+
+    <script src="/javascript01/cours/js/manipDom.js"></script>
+</body>
+
+</html>
