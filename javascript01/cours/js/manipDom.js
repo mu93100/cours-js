@@ -92,7 +92,7 @@ let button_essai2=document.querySelector (".button_essai2");
 button_essai2.addEventListener("mouseover",()=>{  // ATTENTION -->mouseover, click veulent dire qqie chose / pas inventés
     button_essai2.style.background="black"
     button_essai2.style.color= "white"
- })
+})
 let text3=document.querySelector("#text3")
 text3.addEventListener("click", function() {
     text3.textContent="ciao"
@@ -173,3 +173,63 @@ la mettre dans une div du dom
 est cliqué.
 * dans alert " vous avez cliqué sur + "nom de l'utlisateur cliqué" "
 */
+let ex4ulUsers=document.querySelector(".ex4ulUsers")
+let users=["alice", "claude", "roro", "fafa"]
+ 
+// console.log(users);
+// for (let i=0 i<array.lengtht i++) {
+//     let usersLi=document.createElement("Li");
+    
+// }
+
+// for
+
+
+
+// text.appendChild(newParagraphe) // créer un élément enfant
+// newParagraphe.style.color="red"
+// newParagraphe.classList.add("ajout-class-js")
+
+
+//-------boucle FOR -------------------------
+// for a besoin de 3 arguments
+
+// for(let i=1; i<=10; i++){
+//     document.write("<h3 style='color: aquamarine'>una passagiata "+i+"</h3>")
+// }
+
+// // parcourir un tableau - []--> on est dans un tableau [0]-->on va à l'index 0 (1.2.3 etc)
+// let fruits=["pomme", "banane", "cerise"]
+// console.log(fruits[0]) 
+
+// for(let i=0; i<fruits.length;i++){//i<fruits.length = i inf. à long. de fruits
+//     consolelog("fruits :", fruits[i])}
+//     console.log(numbers)
+
+//     const numbers =[10, 20, 30]
+//         console.log(numbers)
+//     //dans console : array =tableau
+
+// const products=[
+//     {name:"smartphone", price : 500},
+//     {name:"ordinateur", price : 800},
+//     {name:"casque", price: 100}
+// ]
+// let html=""; //on initialise une var vide
+// for(let i=0;i<products.length;i++){   // à chaque iteration on ajoute ( +=) une Nlle div avec produit correspondant
+//     html += `<div class="product"> 
+//     <h3> ${products[i].name}</h3>
+//     <p> prix : ${products[i].price} £</p>
+//     </div>`
+// }
+// // après la boucle html contient maintenat TOUT le code HTML généré
+// let productList=document.getElementById ('product-list')
+// productList.innerHTML=html
+// ${} pour insérer des  var directement dans des chaines de caractères
+
+ // += est égal à ça + ...//
+//  const product est un tableau
+//  on appelle l'index , 1, 2 , 3
+//  la clé c'est name
+//  la valeur c'est smartphone
+// $ =interpolation comme concaténation
