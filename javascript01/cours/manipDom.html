@@ -7,7 +7,7 @@
     <title>manipDom</title>
     <style>
         #text p {
-            border: 3px solid green;
+            border: 5px dotted aquamarine;
         }
 
         .ajout-class-js {
@@ -24,10 +24,16 @@
             text-align: center;
             align-content: center;
         }
-        .carre{
+        .carreB{
             width: 1rem;
             height: 1rem;
             background-color: blue;
+            margin: 2rem;
+        }
+        .carreT{
+            width: 1rem;
+            height: 1rem;
+            background-color: tomato;
         }
         .modal{
             width: 15rem;
@@ -36,27 +42,75 @@
             text-align: center;
             align-content: center;
             display: none;
+        }
+        .blokkk{
+            display: block;
+        }
+        #buttonFERmodal{
+            border-radius: 10px 10px 0 0;
+            border: none;
+            padding: 1rem;
+            background-color: rgb(185, 250, 228);
+            color: tomato;
+            font-weight: 800;
+            letter-spacing: .4rem;
+            display: none;
+        }
+        .transformM{
 
         }
+        .black{
+            background-color: black;
+            color: aquamarine;
+            margin: 2rem;
+        }
+        /* .scaled {
+            transform: scale(0.7); /* Équivalent à scaleX(0.7) scaleY(0.7) -- scale (1) = taille normale
+            background-color: pink;
+        } */
     </style>
 </head>
 
 <body>
 
-
+    <div class="titre"></div>
     <div id="titre1"></div>
     <div id="titre2"></div>
     <div id="titre3">TITRE ECRIT DS HTML</div>
     <div id="text"></div>
     <div id="text2"></div>
     <div id="text3"></div>
-    <div class="carre"></div>
+    <div class="carreB"></div>
+    <div class="carreT"></div>
     <button id="buttonModal">ouvrir la modal</button>
-    <div class="modal">m o d a l</div>
-
+    <div class="modal">m o d a l
+        <button id="buttonFERmodal">fermer<br>la modal</button>
+    </div>
     <button class="button_essai" onclick=alertClick() onmouseOver=colorChange()>clique moi</button>
     <button class="button_essai2">clique toi</button>
+    <div class="transformM"></div>
+    <div class="black">
+        <button class="buttonTextChange">clicKtextChange</button>
+        <p class="textChange">text qui va changer</p>
+    </div>
 
+    <div class="ex3liste">
+        <ul class="liste">
+            <li>kiki</li>
+            <li>kak</li>
+            <li>coco</li>
+            <li>coucou</li>
+            <button class="newLi">rajouter une balise liste</button>
+        </ul>
+
+        <ul class="liste">
+            <li>papa</li>
+            <li>pipi</li>
+            <li>pop</li>
+            <li>pulp</li>
+            <button class="newLi">rajouter une balise liste</button>
+        </ul>
+    </div>
     <script src="/javascript01/cours/js/manipDom.js"></script>
 </body>
 

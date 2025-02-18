@@ -42,7 +42,10 @@ if (titre3) {
 }
 
 // 4. gestion de class en CSS /// voir exo france W
-
+// let titre=document.querySelector(".titre")
+// classList avec element titre --> on donne acces à des classes qui vont etre rattachées 
+// à element titre (ajoutées add/ enlevées remove/ ajoutées enlevées toggle)
+// il faut créer la class .ajout-de-class .supp-ma-class ETC ds <style>CSS
 // titre.classList.add("ajout-de-class") // ajoute une class à un element du dom
 // titre.classList.remove("supp-ma-class") // supp une class 
 // titre.classList.toggle("ma-class") // ajoute une class si absente, ou supp la class si présente
@@ -73,14 +76,14 @@ text2.classList.add("ajout-class-text2")
 // mouseover : qd la souris passe sur un element
 // scroll : qd on défile sur la page
 // keydown : quand on touche une touche du clavier
-let button=document.querySelector(".button_essai")
+let button_essai=document.querySelector(".button_essai")
 
 // tout ce qui est après Fo est  I N V E N T é, ce ne sont pas des Fo natives 
 function alertClick() {
     alert ("t'as qu'à t'en fouttre")
 }
 function colorChange() {
-    button.style.background="green"
+    button_essai.style.background="green" 
     }
 
 //------------autre façon de faire :::
@@ -89,17 +92,84 @@ let button_essai2=document.querySelector (".button_essai2");
 button_essai2.addEventListener("mouseover",()=>{  // ATTENTION -->mouseover, click veulent dire qqie chose / pas inventés
     button_essai2.style.background="black"
     button_essai2.style.color= "white"
-})
+ })
 let text3=document.querySelector("#text3")
 text3.addEventListener("click", function() {
     text3.textContent="ciao"
     text3.style.background="tomato"
 })
-
-let carre=document.querySelector(".carre")
-carre.addEventListener("click",()=>{
-    carre.style.width="5rem";
-    carre.style.height="5rem";
+//---------carré blue
+let carreB=document.querySelector(".carreB")
+carreB.addEventListener("click",()=>{
+    carreB.style.width="5rem";
+    carreB.style.height="5rem";
+    if(carreB.style.width="5rem"){
+        carreB.style.transform="scale(1) 1000ms";
+    }
 })
-//// voir scale 2 pour agrandir 2 fois
+
+// carreB.addEventListener("click",()=>{
+//     carreB.style.width="5rem";
+//     carreB.style.height="5rem";
+// })
+
+//---------carré TOMATO
+let carreT=document.querySelector(".carreT")
+    carreT.addEventListener("mouseover",()=>{
+    carreT.style.transform="scale(5)";
+})
+    carreT.addEventListener("mouseout",()=>{
+    carreT.style.transform="scale(1)";
+})
+//// -------------M O D A L
 let buttonModal=document.querySelector ("#buttonModal")
+let modal=document.querySelector (".modal")
+
+buttonModal.addEventListener("click", function () {
+    // modal.style.display="block"
+    buttonModal.style.display="none";
+    modal.classList.toggle ("blokkk") 
+    buttonFERmodal.style.display="block"
+})
+buttonFERmodal.addEventListener("click", function () {
+    // modal.style.display="block"
+    buttonModal.style.display="block"; // avec style le "block" n'est pas inventé
+    modal.classList.toggle ("blokkk") 
+    buttonFERmodal.style.display="none"
+})
+
+//  -----------textChange modif le texte qd on click dessus
+// let buttonTextChange=document.querySelector("buttonTextChange") //  querySelector ou getElementsByClassName (ou getElementsById)
+// let textChange=document.getElementsByClassName("textChange")
+// buttonTextChange.addEventListener("click", function() {
+//     textChange.textContent="T E X Tqui a changé, l'idiot"
+// } )
+
+/**
+ * 
+ * 
+* Exercice 2 : Détecter le survol d'un élément et modifier son style
+*/
+
+/*-------------ex3 liste----
+* Exercice 3 : Ajouter un nouvel élément à une liste <ul>  <li></li> </ul> au clic sur un bouton
+* utiliser creatElement "li" et appenChild
+*/
+// let list=document.getElementsByClassName("liste") // avec getElementsByClassName 
+// // let newLi
+// console.log(list);
+
+
+
+/*------------------Exercice 4 : 
+creer une liste de noms depuis une variable utilisateur contenant un tableau 
+la mettre dans une div du dom
+*
+* pour cela creer une bloucle for qui boucle sur le tableau
+* ajouter createElement "li" et
+* ajouter un textContent a "li" qui sera le i (index) de utilisateur
+*
+* creer une fonction au click affichant une alert quand un nom de la liste du tableau
+est cliqué.
+* dans alert " vous avez cliqué sur + "nom de l'utlisateur cliqué" "
+*/
