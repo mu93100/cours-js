@@ -173,9 +173,26 @@ la mettre dans une div du dom
 est cliqué.
 * dans alert " vous avez cliqué sur + "nom de l'utlisateur cliqué" "
 */
-let ex4ulUsers=document.querySelector(".ex4ulUsers")
+
 let users=["alice", "claude", "roro", "fafa"]
- 
+let ulEx4Users=document.querySelector(".ulEx4Users")
+    // i       index 0     1       2       3
+console.log(users);
+
+for(let i=0;i<users.lenght;i++){
+    let li=document.createElement("li")
+    li.textContent=users[i]
+    ulEx4Users.appendChild(li)
+
+    console.log("li", li.textContent)
+    console.log("console log de user i :", users[i])
+    li.addEventListener("click", function () {
+        alert("vous avez cliqué sur" + users[i])
+        
+    })
+}
+
+
 // console.log(users);
 // for (let i=0 i<array.lengtht i++) {
 //     let usersLi=document.createElement("Li");
@@ -232,4 +249,4 @@ let users=["alice", "claude", "roro", "fafa"]
 //  on appelle l'index , 1, 2 , 3
 //  la clé c'est name
 //  la valeur c'est smartphone
-// $ =interpolation comme concaténation
+// $ =interpolation comme concaténation //
