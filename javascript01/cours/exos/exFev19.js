@@ -18,7 +18,7 @@ button.addEventListener("click", function () {
         console.log("valeur input : " + valeur);
         tableauMU.push(valeur)
         console.log("tableau mu : ", tableauMU);
-        // document.write("<table>i</table>")
+        // document.write("<table>i</table>") // deprecated
         // return      
     }
 for (let i = 0; i < tableauMU.length; i++) {
