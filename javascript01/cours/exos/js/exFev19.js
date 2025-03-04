@@ -19,7 +19,7 @@ button.addEventListener("click", function () {
         tableauMU.push(valeur)
         console.log("tableau mu : ", tableauMU);
         // document.write("<table>i</table>") // deprecated
-        // return      
+        return      
     }
 for (let i = 0; i < tableauMU.length; i++) {
     // const i = (valeur)

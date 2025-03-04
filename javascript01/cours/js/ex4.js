@@ -34,7 +34,6 @@ const utilisateurs = ["Alice", "Bob", "Charlie", "David"];
 
 
 for(i=0;i<utilisateurs.length;i++){
-
     
 }
 
@@ -45,8 +44,6 @@ const utilisateurs = ["Mohamed", "Idriss", "Najiba", "Mathieu"];
 const ul=document.querySelector("#listeUtilisateurs")
  
 for(let i=0;i<utilisateurs.length;i++){
-  
- 
     const li=document.createElement("li")
     li.textContent=utilisateurs[i]
     ul.appendChild(li)
