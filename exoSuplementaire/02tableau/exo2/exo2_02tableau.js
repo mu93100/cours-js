@@ -27,7 +27,7 @@ if (reponsClient!==fruits["i"]) {
 }
 return
 }
-
+ARNAUD
 console.log(fruits);
 let fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi'];
  
@@ -43,4 +43,26 @@ if (index !== -1) {
 } else {
   document.write("indisponible...");
 }
+ 
+ARNAUD2
+let fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi'];
+ 
+ 
+ 
+let fruitDesire = prompt("Quel fruit désirez-vous acheter ?");
+ 
+let resultchoix=fruitDesire.charAt(0).toUpperCase()+fruitDesire.slice(1)
+// let resultchoix = fruitDesire[0].toUpperCase() + fruitDesire.substring(1);
+// let resultchoix = fruitDesire.replace(/^./, fruitDesire[0].toUpperCase());
+// dautre ecritures plus simples et plus belle plus courte et plus efficaces plus propres et lisible
+ 
+let index = fruits.indexOf(resultchoix);
+if (index !== -1) {
+  fruits.splice(index, 1);
+  document.write("ok!");
+} else {
+  document.write("indisponible...");
+}
+ 
+ document.write("Nouvelle liste de fruits disponibles : " + fruits.join(", "));
  

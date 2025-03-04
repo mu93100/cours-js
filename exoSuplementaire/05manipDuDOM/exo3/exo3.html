@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Exercice Scroll Simple</title>
+    <style>
+        body {
+            height: 1500px; /* Page longue pour scroller */
+            font-family: Arial, sans-serif;
+            transition: background-color 1.5s;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Défile la page pour voir l'effet</h1>
+
+<script>
+    window.addEventListener('scroll', function () {
+        let scrollPos = window.scrollY;
+        console.log("Position : " + scrollPos + "px");
+
+        // Changer la couleur du fond après 100px
+        if (scrollPos > 100) {
+            document.body.style.backgroundColor = "lightcoral";
+        } else {
+            document.body.style.backgroundColor = "white";
+        }
+    });
+</script>
+
+</body>
+</html>
