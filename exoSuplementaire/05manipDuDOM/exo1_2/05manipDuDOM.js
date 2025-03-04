@@ -31,39 +31,17 @@ function clickMoi() {
 }
 
 
-function name(params) {
-    
+
+
+let btn =document.querySelector(".buttonSeckene")
+
+function cliquermoi () {
+    btn.textContent="eh ohhhhh"
 }
 
-// Seckene
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Document</title>
-// </head>
-// <body>
-   
-//     <button onclick="cliquermoi()">Cliquez moi</button>
- 
-//     <button class="chien">Cliquez moi</button>
-//     <script src="ex10.js"></script>
-// </body>
-// </html>
- 
-// let btn =document.querySelector("button")
-// let chien =document.querySelector(".chien")
-// console.log(chien)
- 
- 
-// function cliquermoi () {
-//     btn.textContent="eh ohhhhh"
-// }
- 
- 
- 
-// chien.addEventListener("click",()=>{
-//         chien.textContent="eh ohhhhh"
-// })
- 
+let chien =document.querySelector(".chien")
+console.log(chien)
+
+chien.addEventListener("click",()=>{
+        chien.textContent="ah ahh"
+})
